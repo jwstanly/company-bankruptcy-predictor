@@ -36,7 +36,7 @@ A machine learning model for predicting company bankruptcies based on financial 
       </tr>
       <tr>
          <td>Proposal Write Up</td>
-         <td>Name</td>
+         <td>Drew Verzino/Danny Long</td>
       </tr>
       <tr>
          <td>Gantt Chart and Contribution Table</td>
