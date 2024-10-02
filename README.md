@@ -1,3 +1,5 @@
+* JW Note: It looks like Github pages also supports hosting markdown we could also work in files like this readme if we didn't wanna do HTML 
+
 # Company Bankruptcy Predictor
 
 A machine learning model for predicting company bankruptcies based on financial data and risk factors
