@@ -92,17 +92,19 @@
     </p>
     <h3>Methods</h3>
     <p>
-      To address the bankruptcy prediction problem, a variety of machine learning techniques and algorithms will be
-      needed. First, we will consider dimensionality reduction techniques like Principal Component Analysis (PCA) to
-      remove noise and redundancy in our data in hopes of addressing overfitting. Our primary prediction model will most
-      likely be based on logistic regression, support vector machines (SVMs), random forests, or a combination of the
-      three. Logistic regression will help us capture linear relationships and insights to the influence of each feature
-      [1]. SVMs will help us capture subtle differences between bankrupt and non-bankrupt companies due to their
-      effectiveness in higher-dimensional space [3]. Random forests will help us capture non-linear relationships of
-      each feature, highlighting each feature's importance to bankruptcy. This combination of models, along with PCA,
-      will hopefully offer a balanced approach to predicting bankruptcy and understanding the features that contribute
-      to it.
-
+      To address the bankruptcy prediction problem, a variety of machine learning techniques and algorithms will be needed. 
+      First, we will employ data preprocessing methods such as data normalization, missing value imputation, and feature encoding to ensure a robust foundation for our models.
+      Data normalization will help scale features to the same range, preventing bias in models like logistic regression that are sensitive to different scales. 
+      Missing value imputation will allow us to handle incomplete data by filling gaps using methods like mean, median, or k-nearest neighbors (KNN) imputation, ensuring that no useful information is discarded. 
+      Feature encoding will be applied to categorical variables, transforming them into numerical representations using one-hot encoding or label encoding to make them suitable for our models.
+    </p>
+    <p>
+      Next, we will consider dimensionality reduction techniques like Principal Component Analysis (PCA) to remove noise and redundancy in our data in hopes of addressing overfitting. 
+      Our primary prediction model will most likely be based on logistic regression, support vector machines (SVMs), random forests, or a combination of the three. 
+      Logistic regression will help us capture linear relationships and provide insights into the influence of each feature. 
+      SVMs will help us capture subtle differences between bankrupt and non-bankrupt companies due to their effectiveness in higher-dimensional space. 
+      Random forests will help us capture non-linear relationships of each feature, highlighting each feature's importance to bankruptcy. 
+      This combination of models, along with PCA and data preprocessing methods, will hopefully offer a balanced approach to predicting bankruptcy and understanding the features that contribute to it.
     </p>
     <h3>(Potential) Results and Discussion</h3>
     <p>
