@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Bankruptcy Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .content-card {
+      background-color: white;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 40px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #333;
+    }
+
+    h2 {
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content-card">
+    <div style="text-align: center;">
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/009/326/545/non_2x/stock-icon-on-white-background-financial-market-crash-icon-graph-chart-downtrend-symbol-chart-going-down-sign-vector.jpg"
+        alt="Company Bankruptcy Predictor" style="max-width: 400px; width: 100%; height: auto; margin-bottom: 20px;">
+      <h1 style="font-size: 2.5em; margin-bottom: 20px;">Company Bankruptcy Predictor</h1>
+      <p style="font-size: 1.2em; color: #666; max-width: 800px; margin: 0 auto 20px;">A machine learning model for
+        predicting company bankruptcies based on financial data and risk factors</p>
+
+      <p style="font-size: 1.1em;"><strong>Teammates:</strong> Max Boggus, Danny Long, Blake Rodgers, John Wright
+        Stanly, Drew Verzino</p>
+    </div>
+
+    <h2>Proposal</h2>
+    <h3>Introduction / Background</h3>
+    <p>
+      Assessing the risk of bankruptcy is crucial for companies, impacting not only their financial stability but also
+      their employees, stakeholders, and investors. Research has shown that ML can be a helpful tool in accurately
+      determining risk, performing up to 35% better than traditional models in one study on North American firms from
+      1985 to 2013 [1]. Still, there are limiting factors with ML based predictions, like an overlapping feature space
+      between financial variables of bankrupt companies [2]. In our project, we will use accounting data from American
+      public companies listed on the NYSE and NASDAQ from 1999 to 2018. Some features, like EBITDA, Market Value, Total
+      Assets and others will be used to make predictions of which companies went bankrupt during this period. <a
+        href="https://www.kaggle.com/datasets/utkarshx27/american-companies-bankruptcy-prediction-dataset">DATASET
+        LINK</a>
+    </p>
+    <h3>Problem Definition</h3>
+    <p>Unexpected corporate bankruptcies can be problematic for stakeholders, as they can lead to substantial financial
+      losses and job insecurity. Despite advancements in predictive modeling, many existing methods lack accuracy and
+      may fail to capture the complexities of what actually causes or indicates risk of bankruptcy. The inability to
+      accurately predict bankruptcy leaves investors vulnerable to unforeseen market volatility and instability.
+      Therefore, there is a pressing need for more effective solutions that leverage traditional and more cutting-edge
+      machine learning techniques to enhance prediction accuracy. By improving bankruptcy prediction models, we can
+      better inform stakeholders and at-risk companies, which contributes to a more resilient financial ecosystem.
+    </p>
+    <h3>Methods</h3>
+    <p>
+      To address the bankruptcy prediction problem, a variety of machine learning techniques and algorithms will be needed. 
+      First, we will employ data preprocessing methods such as data normalization, missing value imputation, and feature encoding to ensure a robust foundation for our models.
+      Data normalization will help scale features to the same range, preventing bias in models like logistic regression that are sensitive to different scales. 
+      Missing value imputation will allow us to handle incomplete data by filling gaps using methods like mean, median, or k-nearest neighbors (KNN) imputation, ensuring that no useful information is discarded. 
+      Feature encoding will be applied to categorical variables, transforming them into numerical representations using one-hot encoding or label encoding to make them suitable for our models.
+    </p>
+    <p>
+      Next, we will consider dimensionality reduction techniques like Principal Component Analysis (PCA) to remove noise and redundancy in our data in hopes of addressing overfitting. 
+      Our primary prediction model will most likely be based on logistic regression, support vector machines (SVMs), random forests, or a combination of the three. 
+      Logistic regression will help us capture linear relationships and provide insights into the influence of each feature. 
+      SVMs will help us capture subtle differences between bankrupt and non-bankrupt companies due to their effectiveness in higher-dimensional space. 
+      Random forests will help us capture non-linear relationships of each feature, highlighting each feature's importance to bankruptcy. 
+      This combination of models, along with PCA and data preprocessing methods, will hopefully offer a balanced approach to predicting bankruptcy and understanding the features that contribute to it.
+    </p>
+    <h3>(Potential) Results and Discussion</h3>
+    <p>
+      We will potentially evaluate the performance of our predictions using a variety of key quantitative metrics. These
+      will include accuracy, precision, recall, F1-score, and ROC-AUC score. Accuracy will provide a measure of overall
+      performance while precision and recall will help us understand the potential tradeoff between false positives and
+      false negatives. This will be important due to the potentially imbalanced nature of bankruptcy data. Additionally,
+      F1-score will be used to evaluate the model’s effectiveness in handling class imbalance. Also, the ROC-AUC score
+      will help us evaluate the model’s ability to discern between bankrupt and non-bankrupt firms over different
+      threshold settings. Our goal is to create a robust model capable of accurately predicting bankruptcy while
+      minimizing false results. Ideally, our model will achieve F1 and ROC-AUC scores of at least 0.8 respectively.
+
+    </p>
+    <h3>References</h3>
+    <ol>
+      <li>F. Barboza, H. Kimura, and E. Altman, "Machine learning models and bankruptcy prediction," Expert Systems with
+        Applications, vol. 83, pp. 405-417, 2017.</li>
+      <li>S. Shetty, M. Musa, and X. Brédart, "Bankruptcy prediction using machine learning techniques," Journal of Risk
+        and Financial Management, vol. 15, no. 1, p. 35, 2022. doi: 10.3390/jrfm15010035.</li>
+      <li>N. Wang, "Bankruptcy prediction using machine learning," Journal of Mathematical Finance, vol. 7, pp. 908-918,
+        2017. doi: 10.4236/jmf.2017.74049.</li>
+    </ol>
+
+    <h2>Gantt Chart</h2>
+    <iframe
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTRtCfMtZrzmKITYzAyHtXz1i2PYPwISquesea15pSzAB3QKGFmHam_VcM-X2FMZCkhFd9zklAxhVnj/pubhtml?gid=1538336270&amp;single=true&amp;widget=true&amp;headers=false"
+      style="width: 100%; height: 600px;"></iframe>
+    <p>Source Google Sheets Gantt chart <a
+        href="https://docs.google.com/spreadsheets/d/1x6g9YJSQoJFrZLD4bfpwa1Ht04DkKU-xthkxP8odtQM/edit?usp=sharing"
+        target="_blank">here</a>.</p>
+    <h2>Contribution Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Owner</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Github Pages Setup</td>
+          <td>John Wright Stanly</td>
+        </tr>
+        <tr>
+          <td>Proposal Write Up</td>
+          <td>Drew Verzino, Danny Long</td>
+        </tr>
+        <tr>
+          <td>Gantt Chart and Contribution Table</td>
+          <td>John Wright Stanly</td>
+        </tr>
+        <tr>
+          <td>Google Slides</td>
+          <td>Blake Rodgers</td>
+        </tr>
+        <tr>
+          <td>Final Video</td>
+          <td>Max Boggus</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Presentation</h2>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQexUB0HXGszjJ0pRL0kkyRnBMZHa56sKIlQyvWdkY5V-4hHvgufDeLvtg_QPfzv4ak56-4zFipuc9F/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+</body>
+
+</html>
