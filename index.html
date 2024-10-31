@@ -1,64 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Company Bankruptcy Predictor</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Add styling for the image */
+        .top-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
 
-    .content-card {
-      background-color: white;
-      padding: 40px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-      text-align: center;
-    }
+        /* Style for the proposal link */
+        .proposal-link {
+            background-color: #f8d7da; /* Light red background */
+            color: #000000; /* Dark red text color */
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
 
-    h1 {
-      color: #333;
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 1.2em;
-      color: #666;
-    }
-
-    a {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.1em;
-      margin-top: 20px;
-    }
-
-    a:hover {
-      background-color: #0056b3;
-    }
-  </style>
+        .proposal-link:hover {
+            background-color: #f5c6cb;
+        }
+    </style>
 </head>
-
 <body>
-  <div class="content-card">
-    <h1>Welcome to the Company Bankruptcy Predictor</h1>
-    <p>Explore our project on predicting company bankruptcies based on financial data.</p>
-    <a href="proposal.html">View the Project Proposal</a>
-  </div>
-</body>
 
+    <!-- Image at the top -->
+    <img
+        src="https://static.vecteezy.com/system/resources/previews/009/326/545/non_2x/stock-icon-on-white-background-financial-market-crash-icon-graph-chart-downtrend-symbol-chart-going-down-sign-vector.jpg"
+        alt="Company Bankruptcy Predictor" style="max-width: 400px; width: 100%; height: auto; margin-bottom: 20px;">
+
+    <!-- Content for the homepage -->
+    <h1 style="font-size: 2.5em; margin-bottom: 20px;">Company Bankruptcy Predictor</h1>
+      <p style="font-size: 1.2em; color: #666; max-width: 800px; margin: 0 auto 20px;">A machine learning model for
+        predicting company bankruptcies based on financial data and risk factors</p>
+
+      <p style="font-size: 1.1em;"><strong>Teammates:</strong> Max Boggus, Danny Long, Blake Rodgers, John Wright
+        Stanly, Drew Verzino</p>
+
+    <!-- Link to the proposal page -->
+    <a href="proposal.html" class="proposal-link">Read the Proposal</a>
+
+</body>
 </html>
